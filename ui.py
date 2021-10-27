@@ -15,11 +15,11 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(1219, 729)
-        Dialog.setStyleSheet("background-color: rgb(200, 200, 200);\n"
-"background-color: rgb(140, 140, 140);")
+        Dialog.setStyleSheet("background-color: rgb(255, 250, 250);\n"
+"background-color: rgb(119, 136, 153);")
         self.pushButton_koef = QtWidgets.QPushButton(Dialog)
         self.pushButton_koef.setGeometry(QtCore.QRect(50, 440, 301, 61))
-        self.pushButton_koef.setStyleSheet("background-color: rgb(220, 150, 150);")
+        self.pushButton_koef.setStyleSheet("background-color: rgb(0, 128, 0);")
         self.pushButton_koef.setObjectName("pushButton_koef")
         self.label_path_1 = QtWidgets.QLabel(Dialog)
         self.label_path_1.setGeometry(QtCore.QRect(80, 580, 281, 16))
@@ -103,11 +103,11 @@ class Ui_Dialog(object):
         self.pushButton_cal_video.setObjectName("pushButton_cal_video")
         self.pushButton_load = QtWidgets.QPushButton(Dialog)
         self.pushButton_load.setGeometry(QtCore.QRect(250, 510, 101, 21))
-        self.pushButton_load.setStyleSheet("background-color: rgb(220, 150, 150);")
+        self.pushButton_load.setStyleSheet("background-color: rgb(255, 165, 0);")
         self.pushButton_load.setObjectName("pushButton_load")
         self.pushButton_save = QtWidgets.QPushButton(Dialog)
         self.pushButton_save.setGeometry(QtCore.QRect(50, 510, 101, 21))
-        self.pushButton_save.setStyleSheet("background-color: rgb(220, 150, 150);")
+        self.pushButton_save.setStyleSheet("background-color: rgb(255, 165, 0);")
         self.pushButton_save.setObjectName("pushButton_save")
         self.label_path_foto = QtWidgets.QLabel(Dialog)
         self.label_path_foto.setGeometry(QtCore.QRect(860, 590, 261, 21))
@@ -219,7 +219,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
+        Dialog.setWindowTitle(_translate("Dialog", "Camera Calibration"))
         self.pushButton_koef.setText(_translate("Dialog", "Получить коэффициенты калибровки"))
         self.label_4.setText(_translate("Dialog", "Использовать каждый N-й кадр"))
         self.pushButton_path_1.setText(_translate("Dialog", "Файл"))
@@ -233,8 +233,8 @@ class Ui_Dialog(object):
         self.pushButton_cal_video.setText(_translate("Dialog", "Откалибровать видео"))
         self.pushButton_load.setText(_translate("Dialog", "Загрузить"))
         self.pushButton_save.setText(_translate("Dialog", "Сохранить"))
-        self.pushButton_path_foto.setText(_translate("Dialog", "Папка"))
-        self.pushButton_path_video.setText(_translate("Dialog", "Папка"))
+        self.pushButton_path_foto.setText(_translate("Dialog", "Выбрать папку"))
+        self.pushButton_path_video.setText(_translate("Dialog", "Выбрать папку"))
         self.checkBox_corn.setText(_translate("Dialog", "Показать сетку"))
         self.label.setText(_translate("Dialog", "Найдено калибровочнх кадров:"))
         self.label_2.setText(_translate("Dialog", "поток 1"))
